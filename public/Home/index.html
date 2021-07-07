@@ -65,6 +65,16 @@
 
             .intro {
                 width: 100%;
+                margin: 2rem 0;
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            .intro.intro__animation {
+                transition: 2s all;
+                margin: 2rem 0;
+                opacity: 1;
+                transform: translateY(-20px);
             }
 
             .intro__inner {
@@ -156,5 +166,33 @@
         </footer>
 
         <!-----------------JS-------------------->
+        <script>
+            // Переменные
+
+            const header = document.querySelector('.header')
+            const intro = document.querySelector('.intro')
+
+            function onEntry(entry) {
+                entry.forEach(change => {
+                    if (change.isIntersecting) {
+                        change.target.classList.add('intro__animation');
+                    }
+                });
+            }
+
+            // Настраиваем переменные
+        
+            let options = {threshold: [0.5] };
+            let observer = new IntersectionObserver(onEntry, options);
+            let elements = document.querySelectorAll('.intro');
+            
+            for (let elm of elements) {
+                observer.observe(elm);
+
+                // => ||
+
+            }
+
+        </script>
     </body>
 </html>
