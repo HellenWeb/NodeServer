@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-size: 20px;
+                margin: 0;
+                padding: 0;
+                background: #fff;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .header {
+                box-shadow: 0 0 10px #000;
+                background: green;
+                height: 45px;
+                padding-top: 20px;
+                width: 100%;
+            }
+
+            .header__inner {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .container {
+                width: 100%;
+                width: 1170px;
+                margin: 0 auto;
+            }
+            a {
+                text-decoration: none;
+            }
+
+            .nav {
+                position: relative;
+                top: 3px;
+                padding-left: 460px;
+                display: flex;
+                justify-content: center;
+                display: inline;
+                font-size: 15px;
+            }
+
+            .nav a {
+                margin: 0 10px;
+                color: #fff;
+                font-weight: 500;
+                text-transform: uppercase;
+                transition: .2s all;
+            }
+
+            .nav a:hover {
+                border-bottom: 2px solid #fff;
+                padding-bottom: 5px;
+            }
+
+            /* INTRO */
+
+            .intro {
+                width: 100%;
+            }
+
+            .intro__inner {
+                width: 100%;
+                margin: 10% 0;
+            }
+
+            .intro__title {
+                display: flex;
+                justify-content: center;
+                font-size: 35px;
+            }
+
+            .intro__subtitle {
+                display: flex;
+                padding-left: 280px;
+                font-size: 15px;
+                opacity: .5;
+            }
+
+            #t1 {
+                margin-right: 18px;
+                background: green;
+                border-radius: 4px;
+                color: #fff;
+                padding: 10px 20px;
+            }
+            #t2 {
+                position: relative;
+                top: 10px;
+            }
+
+            .footer {
+                height: 70px; 
+                background: #f7f7f7;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                position: absolute; 
+                bottom: 0;
+            }
+
+            .footer__text {
+                display: flex;
+                justify-content: center;
+                margin-top: 25px;
+            }
+        </style>
+        <title>Home</title>
+    </head>
+    <body>
+
+        <!--=====Header====-->
+
+        <header class="header" >
+            <div class="container">
+                <div class="header__inner">
+                    <nav class="nav" style="">
+                        <a href="/">Home</a>
+                        <a href="/contact">Contact</a>
+                        <a href="/aboutme">About Me</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!--====Intro====-->
+
+        <div class="intro" >
+            <div class="container">
+                <div class="intro__inner">
+                    <div class="intro__title">
+                        <h1 id="t1">Node.js</h1>
+                        <h1 id="t2">Server</h1>
+                    </div>
+                    <p class="intro__subtitle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore doloribus voluptate.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__text">&copy; Copyright By. Hellen</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-----------------JS-------------------->
+    </body>
+</html>
