@@ -61,6 +61,6 @@ server.on('request', (req, res) => {
 });
 
 server.listen(3000, () => {
-    console.log(chalk.green('Server is working...'))
+    console.log(chalk.green('Server is working!!!'))
 })
 
