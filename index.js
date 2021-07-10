@@ -8,7 +8,11 @@ const http = require("http")
 
 // Start Coding
 
+// Creating server
+
 let server = http.createServer();
+
+// Making a request for url
 
 server.on('request', (req, res) => {
     if (req.url === '/') {
@@ -43,7 +47,11 @@ server.on('request', (req, res) => {
         })
     }
 
+    // Making variable for Error
+
     let file = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url)
+
+    // Making variable for Error
 
     fs.readFile(file, (err, data) => {
         if (err) {
@@ -59,6 +67,8 @@ server.on('request', (req, res) => {
         }
     })
 });
+
+// Deduce message in terminal at including server
 
 server.listen(3000, () => {
     console.log(chalk.green('Server is working!!!'))
