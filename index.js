@@ -1,5 +1,5 @@
 
-// Подгружаем модули
+// Modules
 
 const chalk = require("chalk")
 const path = require("path")
@@ -71,6 +71,6 @@ server.on('request', (req, res) => {
 // Deduce message in terminal at including server
 
 server.listen(3000, () => {
-    console.log(chalk.green('Server is working!!!'))
+    console.log(chalk.green('Server is working...'))
 })
 
